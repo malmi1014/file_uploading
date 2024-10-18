@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>File Upload Vulnerability Lab</title>
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload Vulnerability Lab</h1>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="file">Choose a file to upload:</label>
+            <input type="file" id="file" name="file" accept=".txt,.jpg,.png,.php" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
